@@ -32,8 +32,6 @@ services:
     ports:
     - "${PHP_HOST_PORT}:9000"
     volumes:
-    - ./etc/dev/php/php.ini:/usr/local/etc/php/conf.d/php.ini
-    - ./etc/dev/php/symfony.pool.conf:/etc/php7/php-fpm.d/symfony.pool.conf
     - .:/var/www/html
     extra_hosts:
     - docker.host:${HOST_IP}
