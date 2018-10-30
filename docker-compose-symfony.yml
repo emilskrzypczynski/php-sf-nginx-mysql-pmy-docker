@@ -36,7 +36,7 @@ services:
     - ./etc/dev/php/symfony.pool.conf:/etc/php7/php-fpm.d/symfony.pool.conf
     - .:/var/www/html
     extra_hosts:
-    - .host:${HOST_IP}
+    - docker.host:${HOST_IP}
     depends_on:
     - mysql
 
